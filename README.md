@@ -6,7 +6,7 @@ Unlike cloud-based code search engines, CodeAtlas runs entirely on your local ma
 
 ---
 
-## 🏗️ Architecture & Pipeline Flow
+## Architecture & Pipeline Flow
 
 ```mermaid
 graph TD
@@ -63,7 +63,7 @@ Instead of arbitrary character-count line slicing, CodeAtlas uses **Web Tree-Sit
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - [Docker & Docker Compose](https://docs.docker.com/engine/install/)
@@ -128,7 +128,7 @@ docker exec -it codeatlas-ollama ollama pull qwen2.5-coder:3b
 
 ---
 
-## 💡 Key Lessons & Architectural Decisions
+## Key Lessons & Architectural Decisions
 
 - **Cascade Dissociation Avoidance:** Avoided default TypeORM relation cascades during indexing. Crawlers process files and chunks atomically, querying repo instances without hydrating relations in memory to prevent PostgreSQL foreign key NULL writes.
 - **Stale Closure Mitigation:** Avoided state-lag in high-frequency SSE message callbacks by using React `useRef` state buffers, allowing the EventSource stream handler to read updated state synchronously before writing to the React state tree.
