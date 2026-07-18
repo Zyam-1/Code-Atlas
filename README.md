@@ -32,7 +32,7 @@ graph TD
 
 ---
 
-## ⚡ Technical Highlights (Engineered for Production)
+## Technical Highlights (Engineered for Production)
 
 ### 1. Abstract Syntax Tree (AST) Semantic Chunking
 Instead of arbitrary character-count line slicing, CodeAtlas uses **Web Tree-Sitter** to parse JavaScript, TypeScript, TSX, Python, Go, and Java source files.
